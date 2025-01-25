@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "7d33c9f4-5d8a-4c6a-bd27-e576d9a06794",
+		"name": "Preventor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4298189"
+	},
+	"item": [
+		{
+			"name": "Get Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://preventor-test.somee.com/api/Students/",
+					"protocol": "http",
+					"host": [
+						"preventor-test",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Students",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://preventor-test.somee.com/api/Students/2",
+					"protocol": "http",
+					"host": [
+						"preventor-test",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\" : \"Renzo\",\r\n    \"Surname\" : \"Ibañez\",\r\n    \"DocumentType\" : 1,\r\n    \"Passport\" : \"Z2719798F\",\r\n    \"Email\" : \"rpip12@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://preventor-test.somee.com/api/Students/",
+					"protocol": "http",
+					"host": [
+						"preventor-test",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Students",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\" : \"Luis\",\r\n    \"Surname\" : \"Soto\",\r\n    \"DocumentType\" : 1,\r\n    \"Passport\" : \"72173195\",\r\n    \"Email\" : \"luis.soto@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://preventor-test.somee.com/api/Students/4",
+					"protocol": "http",
+					"host": [
+						"preventor-test",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Students",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://preventor-test.somee.com/api/Students/4",
+					"protocol": "http",
+					"host": [
+						"preventor-test",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Students",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
